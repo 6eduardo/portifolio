@@ -5,20 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Eduardo Huambo Belchior | Portfolio</title>
-    
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <!-- Logo -->
-        <div class="logotipo">
-            <h1>EduardoHB</h1>
-        </div>
-
-        <!-- Navigation Menu -->
-        <nav class="menu">
+        <nav>
+            <div class="logo">EduardoHB</div>
             <ul>
-                <li><a href="#home">Home</a> </li>
+                <li><a href="#home">Home</a></li> 
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#work">Work</a></li>
@@ -27,85 +21,135 @@
         </nav>
     </header>
 
-    <!-- HOME SECTION -->
+    <!-- HOME -->
     <section class="home" id="home">
-        <div class="conteudo">
+        <div class="home-text">
             <p>Hi, I'm <span>Eduardo</span>, a Backend Developer with expertise in Machine Learning.</p>
-
-            <!-- REDES SOCIAIS-->
             <div class="icons">
                 <ul>
                     <li><a href="https://web.facebook.com/eduardo.hb.7777" target="_blank">
-                         <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="20" height="20">
+                         <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="25">
                     </a></li>
                     <li><a href="https://www.linkedin.com/in/eduardo-belchior-a90006302/" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="20" height="20">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="25">
                     </a></li>
                     <li><a href="https://github.com/6eduardo" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" width="20" height="20">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" width="25">
                     </a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="image">
-            <img src="/images/eduardo.png" alt="Eduardo Huambo Belchior" width="250">
+        <div class="home-image">
+            <img src="images/eduardo.png" alt="Eduardo Huambo Belchior">
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT -->
     <section class="about" id="about">
-        <h2>About Me</h2>
-        <!-- Imagem -->
-        <div class="image">
-            <img src="/images/eduardo.png" alt="Eduardo Huambo Belchior" width="250">
+        <h2>About</h2>
+        <div class="about-container">
+            <figure>
+                <img src="images/eduardo.png" alt="Eduardo Huambo Belchior" width="250">
+            </figure>
+            <article class="about-text">
+                <p>
+                    I'm Eduardo Huambo Belchior, a passionate Backend Developer and Machine Learning enthusiast.
+                    Currently pursuing a degree in Computer Science, I enjoy building scalable systems and exploring
+                    data-driven solutions.
+                </p>
+            </article>
         </div>
-
-        <!-- Conteudo -->
-        <div class="conteudo">
-            <p>
-                I'm Eduardo Huambo Belchior, a passionate Backend Developer and Machine Learning enthusiast.
-                Currently pursuing a degree in Computer Science, I enjoy building scalable systems and exploring
-                data-driven solutions.
-            </p>
-        </div>
-        
     </section>
 
-    <!-- SKILLS SECTION -->
+    <!-- SKILLS -->
     <section class="skills" id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Backend: Python (Django)</li>
-            <li>Databases: MySQL</li>
-            <li>Machine Learning: Scikit-learn, Pandas, NumPy</li>
-            <li>Frontend: HTML, CSS, JavaScript (basic)</li>
-        </ul>
+
+        <div class="skill">
+            <span>Backend: Python (Django)</span>
+            <div class="progress">
+            <div class="progress-bar" style="width: 85%;">85%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>Databases: MySQL</span>
+            <div class="progress">
+            <div class="progress-bar" style="width: 75%;">75%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>Machine Learning: Scikit-learn, Pandas, NumPy</span>
+            <div class="progress">
+            <div class="progress-bar" style="width: 70%;">70%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>Frontend: HTML, CSS, JavaScript (basic)</span>
+            <div class="progress">
+            <div class="progress-bar" style="width: 40%;">40%</div>
+            </div>
+        </div>
     </section>
 
-    <!-- WORK SECTION -->
+    <!-- WORK -->
     <section class="work" id="work">
         <h2>Works</h2>
         <p>Here you’ll find some of my recent works and contributions.</p>
-        
+
         <div class="projects">
-            <div class="projet"> P1</div>
-            <div class="projet"> P2</div>
-            <div class="projet"> P3</div>
-            <div class="projet"> P4</div>
-            <div class="projet"> P5</div>
-            <div class="projet"> P6</div>
+            <!-- Projeto 1 -->
+            <div class="project">
+            <img src="images/hapiness.png" alt="Happiness - Delivery Website">
+            <h3>Hapiness</h3>
+            <p>Frontend project: an electronics ordering site where an agent delivers to the client.</p>
+            <a href="https://github.com/6eduardo/hapiness" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="project">
+            <img src="images/chess.png" alt="Chess Prediction Project">
+            <h3>Previsão Vencedor Xadrez</h3>
+            <p>Machine Learning project that predicts the winner of chess games using data from Lichess.</p>
+            <a href="https://github.com/6eduardo/Previsao-Vencedor-Xadrez" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="project">
+            <img src="images/letras.png" alt="Music Lyrics Website">
+            <h3>Portal de Letras Angolanas</h3>
+            <p>Fullstack project with PHP & MySQL for managing Angolan song lyrics with user interactions.</p>
+            <a href="https://github.com/6eduardo/site-letras-musicas-angolanas" target="_blank">View on GitHub</a>
+            </div>
+
         </div>
-        
     </section>
 
-    <!-- CONTACT SECTION -->
+
+    <!-- CONTACT -->
     <section class="contact" id="contact">
         <h2>Contact</h2>
-        <p>Email: ebelchior152@gmail.com</p>
-        <p>Phone: +244 935 372 793</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/eduardo-belchior-a90006302/">linkedin.com/in/eduardo-belchior-a90006302</a></p>
-        <p>GitHub: <a href="https://github.com/6eduardo">github.com/6eduardo</a></p>
+
+        <div class="contact-info">
+            <a href="mailto:ebelchior152@gmail.com" class="contact-item">
+            <span>📧</span> ebelchior152@gmail.com
+            </a>
+
+            <a href="tel:+244935372793" class="contact-item">
+            <span>📱</span> +244 935 372 793
+            </a>
+
+            <a href="https://www.linkedin.com/in/eduardo-belchior-a90006302/" target="_blank" class="contact-item">
+            <span>💼</span> linkedin.com/in/eduardo-belchior-a90006302
+            </a>
+
+            <a href="https://github.com/6eduardo" target="_blank" class="contact-item">
+            <span>🐙</span> github.com/6eduardo
+            </a>
+        </div>
     </section>
 
     <!-- FOOTER -->
